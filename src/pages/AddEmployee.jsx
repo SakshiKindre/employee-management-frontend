@@ -9,12 +9,10 @@ import { addEmployee } from "../services/employeeService";
 import {
     FaUser,
     FaEnvelope,
+    FaPhone,
     FaBuilding,
-    FaBriefcase,
-    FaMoneyBillWave,
-    FaCheckCircle,
-    FaSave,
-    FaTimes
+    FaMoneyBill,
+    FaBriefcase
 } from "react-icons/fa";
 
 import "../styles/employee-form.css";
