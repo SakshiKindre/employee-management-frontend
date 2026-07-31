@@ -33,6 +33,8 @@ function AddEmployee() {
 
         email: "",
 
+        phone: "",
+
         department: "",
 
         designation: "",
@@ -63,6 +65,7 @@ function AddEmployee() {
             !employee.firstName ||
             !employee.lastName ||
             !employee.email ||
+             !employee.phone || 
             !employee.department ||
             !employee.designation ||
             !employee.salary
@@ -105,20 +108,14 @@ function AddEmployee() {
             navigate("/employees");
 
         } catch (error) {
+    console.log(error.response);
 
-            console.error(error);
-
-            Swal.fire({
-
-                icon: "error",
-
-                title: "Error",
-
-                text: "Unable to add employee."
-
-            });
-
-        } finally {
+    Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: error.response?.data?.message || JSON.stringify(error.response?.data)
+    });
+} finally {
 
             setLoading(false);
 
@@ -244,6 +241,34 @@ function AddEmployee() {
                             </div>
 
                             <div className="col-md-6 mb-3">
+
+                                <label> 
+
+                                    Phone
+
+                                </label>
+
+                                <div className="input-group">
+
+                                    <span className="input-group-text">
+
+                                        <FaPhone />
+
+                                    </span>
+
+                                    <input
+                                        type="tel"
+                                        className="form-control"
+                                        name="phone"
+                                        value={employee.phone}
+                                        onChange={handleChange}
+                                        placeholder="Enter Phone Number"
+                                    />
+
+                                </div>
+
+                            </div>
+                                                        <div className="col-md-6 mb-3">
 
                                 <label>
 
