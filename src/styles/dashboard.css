@@ -1,0 +1,232 @@
+/* ===========================================
+   DASHBOARD
+=========================================== */
+
+.dashboard-container{
+    padding:30px;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.dashboard-header h2{
+    font-weight:700;
+    color:#1e293b;
+}
+
+.dashboard-header p{
+    color:#64748b;
+    margin-top:5px;
+}
+
+/* ===========================================
+   DASHBOARD CARDS
+=========================================== */
+
+.dashboard-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px;
+    border-radius:18px;
+    color:white;
+    transition:.3s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.18);
+
+}
+
+.dashboard-title{
+
+    font-size:16px;
+
+    opacity:.9;
+
+}
+
+.dashboard-value{
+
+    margin-top:10px;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+.dashboard-icon{
+
+    opacity:.9;
+
+}
+
+/* ===========================================
+   CARD COLORS
+=========================================== */
+
+.primary-card{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+}
+
+.success-card{
+
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+
+}
+
+.warning-card{
+
+    background:linear-gradient(135deg,#d97706,#f59e0b);
+
+}
+
+.danger-card{
+
+    background:linear-gradient(135deg,#dc2626,#ef4444);
+
+}
+
+/* ===========================================
+   CONTENT BOXES
+=========================================== */
+
+.dashboard-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.dashboard-box h4{
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================================
+   STATUS LIST
+=========================================== */
+
+.status-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.status-list li{
+
+    margin-bottom:15px;
+
+    font-size:16px;
+
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.dashboard-box .btn{
+
+    border-radius:10px;
+
+    padding:10px 22px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .dashboard-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard-container{
+
+        padding:20px;
+
+    }
+
+    .dashboard-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .dashboard-value{
+
+        font-size:28px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .dashboard-container{
+
+        padding:15px;
+
+    }
+
+    .dashboard-header h2{
+
+        font-size:24px;
+
+    }
+
+    .dashboard-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:15px;
+
+    }
+
+    .dashboard-box{
+
+        padding:20px;
+
+    }
+
+}

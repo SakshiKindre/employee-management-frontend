@@ -1,0 +1,196 @@
+/* ===========================
+   Login Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.login-container{
+    min-height:100vh;
+    background:linear-gradient(135deg,#2563EB,#4F46E5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.login-wrapper{
+    width:100%;
+    max-width:1200px;
+    min-height:700px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.left-panel{
+    background:linear-gradient(135deg,#1D4ED8,#4338CA);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.overlay{
+    width:100%;
+    text-align:center;
+    padding:60px;
+}
+
+.company-icon{
+    font-size:90px;
+    margin-bottom:25px;
+}
+
+.overlay h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:20px;
+    margin-bottom:35px;
+    opacity:.9;
+}
+
+.features{
+    text-align:left;
+    display:inline-block;
+    font-size:18px;
+    line-height:2;
+}
+
+.right-panel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8fafc;
+    padding:40px;
+}
+
+.login-card{
+    width:100%;
+    max-width:430px;
+}
+
+.login-card h2{
+    font-weight:700;
+    color:#1E293B;
+}
+
+.login-card p{
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.login-card label{
+    font-weight:600;
+    margin-bottom:8px;
+    color:#334155;
+}
+
+.input-group-text{
+    background:#EFF6FF;
+    border:1px solid #CBD5E1;
+}
+
+.form-control{
+    height:50px;
+    border:1px solid #CBD5E1;
+}
+
+.form-control:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+}
+
+.login-btn{
+    height:50px;
+    font-size:17px;
+    font-weight:600;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+}
+
+.alert{
+    border-radius:10px;
+}
+
+.form-check-label{
+    font-size:14px;
+}
+
+a{
+    color:#2563EB;
+}
+
+a:hover{
+    color:#1D4ED8;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:991px){
+
+    .left-panel{
+        display:none;
+    }
+
+    .login-wrapper{
+        max-width:500px;
+    }
+
+    .right-panel{
+        padding:30px;
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:576px){
+
+    .login-container{
+        padding:15px;
+    }
+
+    .login-wrapper{
+        border-radius:15px;
+    }
+
+    .right-panel{
+        padding:20px;
+    }
+
+    .login-card h2{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .login-card p{
+        text-align:center;
+    }
+
+    .login-btn{
+        height:48px;
+    }
+
+}
