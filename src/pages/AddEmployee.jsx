@@ -11,8 +11,11 @@ import {
     FaEnvelope,
     FaPhone,
     FaBuilding,
-    FaMoneyBill,
-    FaBriefcase
+    FaBriefcase,
+    FaMoneyBillWave,
+    FaCheckCircle,
+    FaTimes,
+    FaSave
 } from "react-icons/fa";
 
 import "../styles/employee-form.css";
